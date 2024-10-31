@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo:MORF@24&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<header>
+    <img id="menu-toggle" src="navicon.webp" style="height: 60px;">
+    <nav id="side-bar">
+        <ul>
+            <li><a class = "active" href="#">Home</a></li>
+            <li><a href="#">Looker</a></li>
+            <li><a  href="#">Contact</a></li>
+            <li><a  href="#">Football Quiz </a></li>
+            
+        </ul>
+    </nav>
+    <img class="logo-1" src="https://download.logo.wine/logo/Nat_Geo_Wild/Nat_Geo_Wild-Logo.wine.png" height="90px">
+</header>
+
+
+    <form> <!--  This will be the login information of the page  -->
+      <div class="login">
+        <p>Type in your Email</p>
+        <input type="email" placeholder="Email">
+        <p>Type in your password (hint "1234")</p>
+        <input type="password" placeholder="Password">
+        <button id="btn-1">Login</button>
+    </div>
+    </form>
+
+    
+    
+
+<div id="main" style="display: none;">  <!--  This acts as a storage for the main content of the page  -->
+    <h3>Animal Geography</h3>
+    
+    <div class="home_img">
+       
+        <ul>  <!--  These are the main images on the home page of the file  -->
+            <img class="home_img1" src="https://i.natgeofe.com/n/bec7bd50-0d57-4982-aeb5-82e5f8184f89/02-machine-saving-animals-nationalgeographic_1977490.jpg" height="200px">
+            <img class="home_img1" src="https://i.natgeofe.com/k/c02b35d2-bfd7-4ed9-aad4-8e25627cd481/komodo-dragon-head-on_square.jpg" height="200px">
+            <img class="home_img1" src="https://i.natgeofe.com/n/df4b5136-3e0b-441f-ac41-a4e015543e86/MM8944_190909_003761.jpg" height="200px">
+            <img class="home_img1" src="https://i.pinimg.com/originals/58/d5/dd/58d5dd3ba5d164a09c6f225b9c342eb5.jpg"  height="200px">
+        </ul>
+    </div>
+
+<div class="search">
+            <input class="text-box" type="text" id="animal-search" placeholder="Enter animal name">
+            <button id="search-button">Search</button>
+            <div id="imageContainer"></div>
+</div>
+    <div id="image-gallery"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--This if for the jQuery linking-->
+    <script src="intro.js"></script> <!--Linking the javaScript file-->
+</body>
+</html>
